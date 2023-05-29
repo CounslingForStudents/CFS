@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="cfs" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="cfs-service" target="17" />
+      <module name="nsl-adapter" target="1.5" />
+      <module name="nsl-adapter-service" target="11" />
+      <module name="ParentApplication" target="17" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="ParentApplication" options="-parameters" />
+      <module name="cfs" options="-parameters" />
+      <module name="cfs-service" options="-parameters" />
+      <module name="nsl-adapter-service" options="-parameters" />
+    </option>
+  </component>
+</project>
