@@ -1,31 +1,17 @@
 package com.applications.cfs.dto;
 
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 import java.io.Serializable;
+import java.util.HashMap;
+import java.util.Map;
+
+@Getter
+@Setter
+@NoArgsConstructor
 
 public class ApiExecutionDto implements Serializable {
     private String nameofFeature;
-
-    private String body;
-
-    public String getNameofFeature() {
-        return nameofFeature;
-    }
-
-    public void setNameofFeature(String nameofFeature) {
-        this.nameofFeature = nameofFeature;
-    }
-
-    public String getBody() {
-        return body;
-    }
-
-    public void setBody(String body) {
-        this.body = body;
-    }
-
-    @Override
-    public String toString() {
-        return "ApiExecutionDto [nameofFeature=" + nameofFeature + ", body=" + body + "]";
-    }
-
+    private Map<String,String> jsonBody=new HashMap<>();
 }
