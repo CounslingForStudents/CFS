@@ -1,8 +1,6 @@
 package com.applications.cfs.AsyncKafkaEmailApi;
 
-import com.applications.cfs.dto.EmailDto;
 import com.applications.cfs.exception.CfsException;
-import com.applications.cfs.utils.JsonUtils;
 import org.springframework.stereotype.Service;
 
 import java.util.Arrays;
