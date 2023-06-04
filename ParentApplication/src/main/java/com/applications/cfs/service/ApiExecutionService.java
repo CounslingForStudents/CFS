@@ -27,7 +27,7 @@ public class ApiExecutionService {
 
         LOGGER.info("******************************** execute Api in CFS service ******************************");
         String nameofFeature;
-        Map<String,String> jsonBody;
+        Map<String,Object> jsonBody;
 
         try {
             nameofFeature = JsonUtils.getObjectFromJsonString(apiExecutionDto.getNameofFeature(), String.class);

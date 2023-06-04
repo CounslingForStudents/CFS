@@ -13,5 +13,5 @@ import java.util.Map;
 
 public class ApiExecutionDto implements Serializable {
     private String nameofFeature;
-    private Map<String,String> jsonBody=new HashMap<>();
+    private Map<String,Object> jsonBody=new HashMap<>();
 }
